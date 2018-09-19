@@ -41,7 +41,7 @@
 <header><nav id="navigation"{% if page and page.landing and page.cover %} class="m-navbar-landing"{% elif (page and page.cover) or (article and article.cover) %} class="m-navbar-cover"{% endif %}>
   <div class="m-container">
     <div class="m-row">
-      <a href="{{ SITEURL }}/" id="m-navbar-brand" class="m-col-t-9 m-col-m-none m-left-m{% if page and page.landing and page.cover and page.hide_navbar_brand == 'True' %} m-navbar-brand-hidden{% endif %}">
+      <a href="{{ SITEURL + M_SITE_LOGO_URL }}/" id="m-navbar-brand" class="m-col-t-9 m-col-m-none m-left-m{% if page and page.landing and page.cover and page.hide_navbar_brand == 'True' %} m-navbar-brand-hidden{% endif %}">
         {%- if M_SITE_LOGO %}<img src="{{ M_SITE_LOGO|e }}" />{% endif -%}
         {{- (M_SITE_LOGO_TEXT or SITENAME)|e -}}
       </a>
